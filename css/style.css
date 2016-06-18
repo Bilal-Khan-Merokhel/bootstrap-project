@@ -129,3 +129,16 @@ body
     top: 92%;
     float: right;
 }
+
+.progress {
+    background: rgba(245, 245, 245, 1);
+    border: 0px solid rgba(245, 245, 245, 1);
+    border-radius: 10px; height: 33px;
+}
+.txtset
+{
+    font-size: 21px;
+    position: relative;
+    top: 6px;
+    font-weight: bold;
+}
