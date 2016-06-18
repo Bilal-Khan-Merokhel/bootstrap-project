@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/navbar-controll.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/wow.js"></script>
 </head>
 <body>
@@ -99,7 +100,7 @@
         <div class="container">
             <div class="content">
                 <div class="row">
-                    <h1 class="page-title txt2">Our Team <small class="color"><span class="glyphicon glyphicon-sunglasses hidden-xs wow bounceInUp" data-wow-delay="1s" data-wow-duration="1s"></span></small></h1>
+                    <h2 class="page-title txt2">Our Team <small class="color"><span class="glyphicon glyphicon-sunglasses hidden-xs wow bounceInUp" data-wow-delay="1s" data-wow-duration="1s"></span></small></h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
@@ -153,27 +154,35 @@
                     </div>
                     <div class="panel panel-success">
                         <div class="panel-heading txt-size">Contact Details</div>
-                        <table class="table the-table">
-                            <th class="text-center txt-size">Name</th>
-                            <th class="text-center txt-size">Position</th>
+                        <table class="table table-striped the-table">
+                            <th class="text-center txt-size" style="width: 125px;  padding-left: 16px;">Name</th>
+                            <th class="text-center txt-size" style="width:150px;">Position</th>
                             <th class="text-center txt-size">Email</th>
                             <tr>
-                                <td >Bilal Khan</td>
+                                <td style="padding-left: 16px;" >Bilal Khan</td>
                                 <td >CEO</td>
                                 <td >bilal_khan786@live.com</td>
                             </tr>
+
                             <tr>
-                               <td >Saad Ahmed</td>
+                               <td  style="padding-left: 16px;">Saad Ahmed</td>
                                 <td >Co-Founder</td>
                                 <td >saad_ahmed786@live.com</td>
                             </tr>
+
                             <tr>
-                                <td>Osama Awan</td>
+                                <td style="padding-left: 16px;" >Zohaib Saleem</td>
+                                <td >Web Engineer</td>
+                                <td >info@zohaibsaleemweb.com</td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding-left: 16px;">Osama Awan</td>
                                 <td>Manager</td>
                                 <td>osamaAwan4455@gmail.com</td>
                             </tr>
                             <tr>
-                                <td>Hamza Awan</td>
+                                <td style="padding-left: 16px;">Hamza Awan</td>
                                 <td>Project Manager</td>
                                 <td>hamza_awan007@yahoo.com</td>
                             </tr>
@@ -205,9 +214,12 @@
 </section>
 
 
+
 <footer class="footer">
     <div class="container">
-        <p class="ftrtxt wow bounceInDown" data-wow-delay="1s" data-wow-duration="1s">&copy; 2016 BKW</p>
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+        <p class="ftrtxt wow bounceInDown" data-wow-delay="1s" data-wow-duration="1s" style="    color: gray;
+    font-size: 15px;">Bilal Khan MoroKhel &copy; Copyright rules reserved by 2016 BKW</p>
     </div>
 </footer>
 
@@ -218,6 +230,22 @@
     new WOW().init();
 </script>
 <script>
+
+
+
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
