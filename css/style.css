@@ -5,6 +5,7 @@ body
 {
     background-color: #101010;
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-family: "Sertig" !important;
     font-size: 1.7em;
 =======
@@ -39,6 +40,15 @@ table
     text-transform: uppercase;
     margin-bottom: 22px;
 >>>>>>> 35598a638e0726dd4464d967918eea9379340e2f
+=======
+    font-family: "Sertig" !important;
+    font-size: 1.7em;
+}
+
+@font-face {
+    font-family: Sertig;
+    src: url(../fonts/Sertig.otf);
+>>>>>>> gh-pages
 }
 
 @font-face {
