@@ -1,7 +1,13 @@
 body
 {
     background-color: #101010;
-    font-family: cursve !important
+    font-family: "Sertig" !important;
+    font-size: 1.7em;
+}
+
+@font-face {
+    font-family: Sertig;
+    src: url(../fonts/Sertig.otf);
 }
 
 .skewed-bg {
