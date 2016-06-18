@@ -96,11 +96,6 @@
     border-color: rgba(255, 255, 255, 0.23);
 }
 
-.btn-default {
-    color: #FFFDFD;
-    background-color: #8962b1;
-    border-color: #8962b1;
-}
 
 .btn-default:hover,.btn-default:active
 {
