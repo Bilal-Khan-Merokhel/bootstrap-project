@@ -181,6 +181,7 @@ table
     -webkit-border-radius:60px;
     -moz-border-radius:60px;
     border-radius:60px
+    z-index: 9999 !important;
 }
 #scroll span {
     position:absolute;
@@ -192,6 +193,7 @@ table
     width:0;
     border:8px solid transparent;
     border-bottom-color:#ffffff;
+
 }
 #scroll:hover {
     background-color:#e74c3c;
